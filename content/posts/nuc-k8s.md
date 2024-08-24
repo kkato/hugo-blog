@@ -23,7 +23,7 @@ draft: false
 
 ## kubeadmのインストール
 
-以下の手順を参考にします。（「kubeadm, kubelet, kubectl」のインストールの記述が古かったので、英語版を参照しました。）
+以下の手順を参考にします。（[kubeadm、kubelet、kubectlのインストール](https://kubernetes.io/ja/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#kubeadm-kubelet-kubectl%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)のrepoのbaseurlの記述が古かったので、英語版を参照しました。）
 - [Installing kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
 
 ### 始める前に
