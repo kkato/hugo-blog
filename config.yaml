@@ -1,0 +1,135 @@
+baseURL: "https://kkato.dev/"
+title: kkato.dev
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: G-X8460KTHFP
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/Variables
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: kkato.dev
+  description: "kkato.dev"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Ken Kato # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  enableEmoji: true
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    # favicon: "images/.svg"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "kkato.dev"
+    # icon: /apple-touch-icon.png
+    # iconHeight: 35
+
+  # profile-mode
+  # profileMode:
+  #  enabled: false # needs to be explicitly set
+  #  title: ExampleSite
+  #  subtitle: "This is subtitle"
+  #  imageUrl: "<img location>"
+  #  imageWidth: 120
+  #  imageHeight: 120
+  #  imageTitle: my image
+  #  buttons:
+  #    - name: Posts
+  #      url: posts
+  #    - name: Tags
+  #      url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "kkato.dev"
+    Content: "Hi there \U0001F44B
+
+
+    Welcome to my website!"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/kkato/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/ken-kato/"
+    - name: x
+      url: "https://twitter.com/kkato25"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: archive
+      name: Archive
+      url: /archive/
+      weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
